@@ -3,15 +3,17 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    setIsMounted(true);
   }, []);
 
   const renderThemeChangerButton = () => {
-    if (!mounted)
+    if (!isMounted)
       return (
         <button
           aria-label="Light/Dark mode toggler placeholder"
@@ -77,19 +79,41 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between transition-[background-color] duration-500 bg-white dark:bg-black sticky top-0 p-4">
+    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[background-color,border-color] duration-500 bg-white dark:bg-black border-b-2 border-slate-200 md:border-b-0 dark:border-slate-600 sticky top-0 p-4">
       {/* TODO: Check hrefs  */}
-      <Link href="/" className="text-lg font-semibold tracking-wide">
-        GONZALO GONZÁLEZ
-      </Link>
-      <div className="flex items-center">
-        <div className="flex gap-4 mr-10">
+      <div className="flex items-center justify-between md:mb-0">
+        <Link href="/" className="md:text-lg font-semibold tracking-wide">
+          GONZALO GONZÁLEZ
+        </Link>
+        <button className="block md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <svg
+            version="1.1"
+            viewBox="0 0 32 32"
+            xmlSpace="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            className="h-8 w-8"
+          >
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"></path>
+          </svg>
+        </button>
+      </div>
+      <div
+        className={
+          "top-full flex flex-col md:flex-row items-center overflow-hidden" +
+          " " +
+          (!isOpen ? "h-0 md:h-auto" : "h-auto mt-4") +
+          " " +
+          " md:mt-0"
+        }
+      >
+        <div className="flex flex-col md:flex-row items-center gap-4 mb-10 md:mb-0 md:mr-10">
           <Link href="/">Home</Link>
           {/* <Link href="/about">About</Link> */}
           <Link href="/#projects">Projects</Link>
         </div>
         {/* TODO: Internationalization and show just 2 of the 4 buttons  */}
-        <div className="flex items-center gap-1">
+        <div className="flex items-center justify-center md:justify-start gap-1">
           {renderThemeChangerButton()}
           {/* <button
             aria-label="Set language to Spanish"

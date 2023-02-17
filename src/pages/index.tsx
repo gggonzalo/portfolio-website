@@ -119,7 +119,7 @@ export default function Home() {
                 Read more
               </Link>
               <div className="flex gap-1.5 text-white text-sm">
-                <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent text-red-500 dark:text-white dark:bg-red-600 rounded-lg p-1">
+                <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent border border-red-500 text-red-500 dark:text-white dark:bg-red-600 rounded-lg p-1">
                   <svg
                     viewBox="0 0 128 128"
                     className="transition-[fill] duration-500 fill-red-500 dark:fill-white w-4 h-4 mr-1"
@@ -128,7 +128,7 @@ export default function Home() {
                   </svg>
                   <span>Angular</span>
                 </div>
-                <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent text-sky-500 dark:text-white dark:bg-sky-500 rounded-lg p-1">
+                <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent border border-sky-500 text-sky-500 dark:text-white dark:bg-sky-500 rounded-lg p-1">
                   <span>Tailwind CSS</span>
                 </div>
               </div>
