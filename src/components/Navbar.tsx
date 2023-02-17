@@ -79,7 +79,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[background-color,border-color] duration-500 bg-white dark:bg-black border-b-2 border-slate-200 md:border-b-0 dark:border-slate-600 sticky top-0 p-4">
+    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[background-color,border-color] duration-500 bg-white dark:bg-black border-b-2 border-slate-200 md:border-b-0 dark:border-slate-600 p-4">
       {/* TODO: Check hrefs  */}
       <div className="flex items-center justify-between md:mb-0">
         <Link href="/" className="md:text-lg font-semibold tracking-wide">
@@ -108,9 +108,13 @@ const Navbar = () => {
         }
       >
         <div className="flex flex-col md:flex-row items-center gap-4 mb-10 md:mb-0 md:mr-10">
-          <Link href="/">Home</Link>
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            HOME
+          </Link>
           {/* <Link href="/about">About</Link> */}
-          <Link href="/#projects">Projects</Link>
+          <Link href="/#projects" onClick={() => setIsOpen(false)}>
+            PROJECTS
+          </Link>
         </div>
         {/* TODO: Internationalization and show just 2 of the 4 buttons  */}
         <div className="flex items-center justify-center md:justify-start gap-1">

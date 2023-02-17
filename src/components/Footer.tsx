@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-between p-4">
-      <div className="flex items-center gap-7">
+    <footer className="flex flex-col md:flex-row items-center justify-between p-4">
+      <div className="flex items-center gap-7 mb-4 md:mb-0">
         <Link
           href="https://www.linkedin.com/in/gggonzalo"
           target="_blank"
