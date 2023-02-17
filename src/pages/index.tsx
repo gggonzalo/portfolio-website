@@ -15,7 +15,7 @@ export default function Home() {
         />
         <div>
           <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋</h1>
-          <p className="text-lg mr-20 md:mr-0 mb-2">
+          <p className="text-lg mr-0 md:mr-20 mb-2">
             I&apos;m a{" "}
             <em className="font-medium not-italic">Full Stack Developer</em>{" "}
             from Costa Rica.
