@@ -3,11 +3,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      {/* TODO: Add animations on scroll */}
       <section
         id="intro"
-        className="animate-slide-in-bottom flex flex-col md:flex-row items-center justify-between mb-20"
+        className="flex flex-col md:flex-row items-center justify-between mb-20"
       >
-        {/* TODO: See if this can be changed to Image */}
+        {/* TODO: See if this can be changed to Image. Also, see why this is taking so long to load on mobile */}
         <img
           src="/images/me.png"
           alt=""

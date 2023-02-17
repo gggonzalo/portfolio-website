@@ -111,6 +111,9 @@ const Navbar = () => {
           <Link href="/" onClick={() => setIsOpen(false)}>
             HOME
           </Link>
+          <Link href="/" onClick={() => setIsOpen(false)}>
+            RESUME
+          </Link>
           {/* <Link href="/about">About</Link> */}
           <Link href="/#projects" onClick={() => setIsOpen(false)}>
             PROJECTS
