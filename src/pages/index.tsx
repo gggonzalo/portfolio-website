@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="px-4">
+    <>
       <section
         id="intro"
         className="animate-slide-in-bottom flex flex-col md:flex-row items-center justify-between mb-20"
@@ -34,13 +34,13 @@ export default function Home() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 420 500"
-                className="fill-blue-500 dark:fill-blue-400 h-5 w-5 mr-1.5"
+                className=" fill-blue-500 dark:fill-blue-400 h-5 w-5 mr-1.5"
               >
                 <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
               </svg>
-              <span className="text-xl tracking-wider hover:text-blue-400">
+              <label className="text-xl tracking-wider duration-200 hover:text-blue-400">
                 LinkedIn
-              </span>
+              </label>
             </Link>
             <Link
               href="https://github.com/gggonzalo"
@@ -51,13 +51,13 @@ export default function Home() {
               <svg
                 viewBox="0 1.5 22 22"
                 xmlns="http://www.w3.org/2000/svg"
-                className="fill-slate-700 dark:fill-purple-400 h-5 w-5 mr-1.5"
+                className=" fill-slate-700 dark:fill-purple-400 h-5 w-5 mr-1.5"
               >
                 <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path>
               </svg>
-              <span className="text-xl tracking-wider hover:text-slate-700 dark:hover:text-purple-400">
+              <label className="text-xl tracking-wider duration-200 hover:text-slate-700 dark:hover:text-purple-400">
                 GitHub
-              </span>
+              </label>
             </Link>
           </div>
         </div>
@@ -71,13 +71,13 @@ export default function Home() {
           <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-600 shadow-lg dark:shadow-none flex flex-col rounded-lg overflow-clip">
             {/* TODO: Add alt pictures  */}
             <img
-              src="https://cdn.dribbble.com/userupload/2970030/file/original-b405f07b44b99610820219e22202c3a4.png?resize=400x0"
+              src="/images/custo-me.jpg"
               alt=""
-              className="w-full h-56 object-cover object-top"
+              className="w-full h-56 object-cover"
             />
             <div className="flex flex-col p-3">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium">Project title 1</h3>
+                <h3 className="text-lg font-medium">CustoMe</h3>
                 <div className="flex items-center gap-1.5">
                   <Link href="/" aria-label="Live demo" title="Live demo">
                     <svg
@@ -90,11 +90,11 @@ export default function Home() {
                     </svg>
                   </Link>
                   <Link
-                    href="https://github.com"
+                    href="https://github.com/gggonzalo/custo-me"
                     target="_blank"
                     rel="noopener"
-                    aria-label="View source"
-                    title="View source"
+                    aria-label="View source code"
+                    title="View source code"
                   >
                     <svg
                       viewBox="0 0 24 24"
@@ -107,10 +107,10 @@ export default function Home() {
                 </div>
               </div>
               <p className="mb-1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Asperiores illum explicabo, in nihil voluptas repellendus,
-                temporibus natus eum quo corporis eius harum repudiandae tenetur
-                perspiciatis.
+                Sometimes the Halloween party is close but you don't have a
+                costume. CustoMe helps you find characters based on the
+                attributes that work for you, so you get an idea of what you can
+                dress up as.
               </p>
               <Link
                 href="/"
@@ -136,6 +136,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

@@ -10,10 +10,9 @@ const Layout = ({ children }: React.PropsWithChildren) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <div className="h-screen max-w-4xl mx-auto flex flex-col">
         <Navbar />
-        <main className="grow my-10">{children}</main>
+        <main className="grow px-4 my-10">{children}</main>
         <Footer />
       </div>
     </>

@@ -19,7 +19,8 @@
   h5,
   h6,
   p,
-  a {
+  a,
+  label {
     @apply transition-[color] duration-500 text-slate-600 dark:text-slate-200;
   }
 }

@@ -72,7 +72,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between transition-[background-color] duration-500 bg-white dark:bg-black sticky top-0 p-4">
       {/* TODO: Check hrefs  */}
       <Link href="/" className="text-lg font-semibold tracking-wide">
-        GONZALO GONZALEZ
+        GONZALO GONZÁLEZ
       </Link>
       <div className="flex items-center">
         <div className="flex gap-4 mr-10">

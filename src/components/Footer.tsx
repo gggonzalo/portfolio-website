@@ -44,7 +44,7 @@ const Footer = () => {
           </svg>
         </Link>
       </div>
-      <p>© Gonzalo Gonzalez 2023</p>
+      <p>© Gonzalo González 2023</p>
     </footer>
   );
 };
