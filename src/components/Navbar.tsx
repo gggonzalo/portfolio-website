@@ -1,7 +1,6 @@
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import styles from "@/styles/Navbar.module.css";
 
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -12,7 +11,16 @@ const Navbar = () => {
   }, []);
 
   const renderThemeChangerButton = () => {
-    if (!mounted) return null;
+    if (!mounted)
+      return (
+        <button
+          aria-label="Light/Dark mode toggler placeholder"
+          title="Light/Dark mode toggler placeholder"
+          className="rounded-full p-2"
+        >
+          <svg className="h-5 w-5"></svg>
+        </button>
+      );
 
     const currentTheme = theme === "system" ? systemTheme : theme;
 

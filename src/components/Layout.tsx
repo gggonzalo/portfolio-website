@@ -6,7 +6,9 @@ const Layout = ({ children }: React.PropsWithChildren) => {
   return (
     <>
       <Head>
-        <title>Gonzalo Gonzalez</title>
+        <meta charSet="utf-8" />
+        <title>Gonzalo González</title>
+        <base href="/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
