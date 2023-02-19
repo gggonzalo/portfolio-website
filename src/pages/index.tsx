@@ -82,6 +82,7 @@ export default function Home() {
                 <div className="flex items-center gap-1.5">
                   <Link
                     href="https://custo-me.gggonzalo.com"
+                    target="_blank"
                     aria-label="Live demo"
                     title="Live demo"
                   >
