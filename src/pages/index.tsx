@@ -80,7 +80,11 @@ export default function Home() {
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-medium">CustoMe</h3>
                 <div className="flex items-center gap-1.5">
-                  <Link href="/" aria-label="Live demo" title="Live demo">
+                  <Link
+                    href="https://custo-me.gggonzalo.com"
+                    aria-label="Live demo"
+                    title="Live demo"
+                  >
                     <svg
                       viewBox="-4 1.5 28 28"
                       version="1.1"
