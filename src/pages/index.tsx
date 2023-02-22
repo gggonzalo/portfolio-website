@@ -15,7 +15,7 @@ export default function Home() {
           className="h-48 w-48 md:order-2 mb-10 md:mb-0"
         />
         <div>
-          <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋</h1>
+          <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋🏻</h1>
           <p className="text-lg mr-0 md:mr-20 mb-2">
             I&apos;m a{" "}
             <em className="font-medium not-italic">Full Stack Developer</em>{" "}
@@ -112,18 +112,21 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <p className="mb-1">
-                Sometimes the Halloween party is close but you don&apos;t have a
-                costume. CustoMe helps you find characters based on the
-                attributes that work for you, so you get an idea of what you can
-                dress up as.
-              </p>
-              <Link
-                href="/"
-                className="text-blue-500 dark:text-blue-400 hover:underline mb-4"
-              >
-                Read more
-              </Link>
+              <div className="flex flex-col mb-4">
+                <p>
+                  Sometimes the Halloween party is close but you don&apos;t have
+                  a costume. CustoMe helps you find characters based on the
+                  attributes that work for you, so you get an idea of what you
+                  can dress up as.
+                </p>
+                {/* TODO: Add to projects that have a separate page */}
+                {/* <Link
+                  href="/"
+                  className="text-blue-500 dark:text-blue-400 hover:underline mt-1"
+                >
+                  Read more
+                </Link> */}
+              </div>
               <div className="flex gap-1.5 text-white text-sm">
                 <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent border border-red-500 text-red-500 dark:text-white dark:bg-red-600 rounded-lg p-1">
                   <svg
