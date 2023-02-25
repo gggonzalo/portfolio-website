@@ -15,12 +15,12 @@ export default function Home() {
           className="h-48 w-48 md:order-2 mb-10 md:mb-0"
         />
         <div>
-          <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋🏻</h1>
+          <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋</h1>
           <p className="text-lg mr-0 md:mr-20 mb-2">
             I&apos;m a{" "}
             <em className="font-medium not-italic">Full Stack Developer</em>{" "}
             from Costa Rica.
-            <span className="whitespace-nowrap">👨🏻‍💻🇨🇷</span>
+            <span className="whitespace-nowrap">👨‍💻🇨🇷</span>
             <br />I like building simple, usable, delightful user experiences
             and tools, as well as writing code that&apos;s easy to understand
             and maintainable. <span className="whitespace-nowrap">🛠️✨</span>
@@ -39,7 +39,8 @@ export default function Home() {
               >
                 <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
               </svg>
-              <label className="text-xl tracking-wider hover:text-blue-400">
+              {/* TODO: Check if we can use a different element here. Seems like a label inside a is not semantically correct */}
+              <label className="text-xl tracking-wider cursor-pointer hover:text-blue-400">
                 LinkedIn
               </label>
             </Link>
@@ -56,7 +57,7 @@ export default function Home() {
               >
                 <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path>
               </svg>
-              <label className="text-xl tracking-wider hover:text-slate-700 dark:hover:text-purple-400">
+              <label className="text-xl tracking-wider cursor-pointer hover:text-slate-700 dark:hover:text-purple-400">
                 GitHub
               </label>
             </Link>
