@@ -9,9 +9,13 @@ export default function Home() {
         id="intro"
         className="flex flex-col md:flex-row items-center justify-between mb-20"
       >
-        <div className="shrink-0 h-48 w-48 relative md:order-2 mb-10 md:mb-0">
-          <Image src="/images/me.png" alt="" fill />
-        </div>
+        <Image
+          src="/images/me.png"
+          alt=""
+          height="192"
+          width="192"
+          className="shrink-0 md:order-2 mb-10 md:mb-0"
+        />
         <div>
           <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋</h1>
           <p className="text-lg mr-0 md:mr-20 mb-2">
