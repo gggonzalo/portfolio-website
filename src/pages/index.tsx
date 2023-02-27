@@ -71,7 +71,7 @@ export default function Home() {
         <p className="text-lg mb-6">
           Some of the side projects I&apos;ve worked on:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-600 shadow-lg dark:shadow-none flex flex-col rounded-lg overflow-clip">
             {/* TODO: Add alt pictures  */}
             <div className="h-56 w-full relative">
@@ -83,8 +83,31 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col p-3">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium">CustoMe</h3>
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex flex-col items-start">
+                  <h3 className="text-lg font-medium">CustoMe</h3>
+                  <div className="flex items-center transition-[background-color] duration-500 bg-amber-300 dark:bg-amber-500 rounded-lg px-1.5 py-0.5">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      viewBox="0 0 512 512"
+                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-white mr-1.5"
+                    >
+                      <g strokeWidth="0"></g>
+                      <g strokeLinecap="round" strokeLinejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <g>
+                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-white font-medium">
+                      In progress
+                    </span>
+                  </div>
+                </div>
                 <div className="flex items-center gap-1.5">
                   <Link
                     href="https://custo-me.gggonzalo.com"
@@ -134,17 +157,112 @@ export default function Home() {
                 </Link> */}
               </div>
               <div className="flex gap-1.5 text-white text-sm">
-                <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent border border-red-500 text-red-500 dark:text-white dark:bg-red-600 rounded-lg p-1">
+                <div className="flex items-center transition-[background-color] duration-500 bg-transparent border border-red-500 dark:bg-red-600 rounded-lg p-1">
                   <svg
                     viewBox="0 0 128 128"
                     className="transition-[fill] duration-500 fill-red-500 dark:fill-white w-4 h-4 mr-1"
                   >
                     <path d="M52.864 64h23.28L63.769 38.123zM63.81 1.026L4.553 21.88l9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635L63.81 1.026zM48.044 75l-7.265 18.176-13.581.056 36.608-81.079-.07-.153h-.064l.001-.133.063.133h.141l.123-.274V12h-.124l-.069.153 38.189 81.417-13.074-.287-8.042-18.58-17.173.082"></path>
                   </svg>
-                  <span>Angular</span>
+                  <span className="transition-[color] duration-500 text-red-500 dark:text-white">
+                    Angular
+                  </span>
                 </div>
-                <div className="flex items-center transition-[background-color,color] duration-500 bg-transparent border border-sky-500 text-sky-500 dark:text-white dark:bg-sky-500 rounded-lg p-1">
-                  <span>Tailwind CSS</span>
+                <div className="flex items-center transition-[background-color] duration-500 bg-transparent border border-sky-500 dark:bg-sky-500 rounded-lg p-1">
+                  <span className="transition-[color] duration-500 text-sky-500 dark:text-white">
+                    Tailwind CSS
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-600 shadow-lg dark:shadow-none flex flex-col rounded-lg overflow-clip">
+            {/* TODO: Add alt pictures  */}
+            <div className="h-56 w-full relative">
+              <Image
+                src="/images/nueva-mejenga.jpg"
+                alt=""
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col p-3">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex flex-col items-start">
+                  <h3 className="text-lg font-medium">NuevaMejenga</h3>
+                  <div className="flex items-center transition-[background-color] duration-500 bg-amber-300 dark:bg-amber-500 rounded-lg px-1.5 py-0.5">
+                    <svg
+                      version="1.1"
+                      id="Layer_1"
+                      viewBox="0 0 512 512"
+                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-white mr-1.5"
+                    >
+                      <g strokeWidth="0"></g>
+                      <g strokeLinecap="round" strokeLinejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <g>
+                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-white font-medium">
+                      In progress
+                    </span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  {/* TODO: Add link to demo when there's something deployed :P */}
+                  {/* <Link
+                    href="https://nuevamejenga.gggonzalo.com"
+                    target="_blank"
+                    aria-label="Live demo"
+                    title="Live demo"
+                  >
+                    <svg
+                      viewBox="-4 1.5 28 28"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="fill-blue-500 dark:fill-blue-400 w-6 h-6"
+                    >
+                      <path d="M15.656 8.5l-10.438 10.5 2.188 2.219 10.469-10.469 1.938 1.906c0.531 0.531 1 0.375 1-0.438v-5.656c0-0.5-0.438-0.969-0.969-0.969h-5.656c-0.813 0-1 0.469-0.469 1zM16.813 23.031v-7.094h2.375v7.906c0 1.406-1.156 2.563-2.563 2.563h-14.063c-1.406 0-2.563-1.156-2.563-2.563v-14.094c0-1.406 1.156-2.563 2.563-2.531h8.656v2.375h-7.844c-0.5 0-0.969 0.469-0.969 0.969v12.469c0 0.5 0.469 0.969 0.969 0.969h12.469c0.5 0 0.969-0.469 0.969-0.969z"></path>
+                    </svg>
+                  </Link> */}
+                </div>
+              </div>
+              <div className="flex flex-col mb-4">
+                <p>
+                  Organizing a pick-up soccer game with your friends can be
+                  complicated. From defining the date and time to ensuring that
+                  everyone paid you their fee. NuevaMejenga helps you with these
+                  tasks so you only have to care about having fun when it&apos;s
+                  game day.
+                </p>
+                {/* TODO: Add to projects that have a separate page */}
+                {/* <Link
+                  href="/"
+                  className="text-blue-500 dark:text-blue-400 hover:underline mt-1"
+                >
+                  Read more
+                </Link> */}
+              </div>
+              <div className="flex gap-1.5 text-white text-sm">
+                <div className="flex items-center transition-[background-color] duration-500 bg-transparent border border-red-500 dark:bg-red-600 rounded-lg p-1">
+                  <svg
+                    viewBox="0 0 128 128"
+                    className="transition-[fill] duration-500 fill-red-500 dark:fill-white w-4 h-4 mr-1"
+                  >
+                    <path d="M52.864 64h23.28L63.769 38.123zM63.81 1.026L4.553 21.88l9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635L63.81 1.026zM48.044 75l-7.265 18.176-13.581.056 36.608-81.079-.07-.153h-.064l.001-.133.063.133h.141l.123-.274V12h-.124l-.069.153 38.189 81.417-13.074-.287-8.042-18.58-17.173.082"></path>
+                  </svg>
+                  <span className="transition-[color] duration-500 text-red-500 dark:text-white">
+                    Angular
+                  </span>
+                </div>
+                <div className="flex items-center transition-[background-color] duration-500 bg-transparent border border-sky-500 dark:bg-sky-500 rounded-lg p-1">
+                  <span className="transition-[color] duration-500 text-sky-500 dark:text-white">
+                    Tailwind CSS
+                  </span>
                 </div>
               </div>
             </div>
