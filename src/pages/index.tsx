@@ -71,7 +71,7 @@ export default function Home() {
         <p className="text-lg mb-6">
           Some of the side projects I&apos;ve worked on:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           {/* TODO: Make these cards a component */}
           <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-600 shadow-lg dark:shadow-none flex flex-col rounded-lg overflow-clip">
             {/* TODO: Add alt pictures  */}
@@ -92,7 +92,7 @@ export default function Home() {
                       version="1.1"
                       id="Layer_1"
                       viewBox="0 0 512 512"
-                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-white mr-1.5"
+                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-amber-50 mr-1.5"
                     >
                       <g strokeWidth="0"></g>
                       <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -104,7 +104,7 @@ export default function Home() {
                         </g>
                       </g>
                     </svg>
-                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-white font-medium">
+                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-amber-50 font-medium">
                       In progress
                     </span>
                   </div>
@@ -190,7 +190,7 @@ export default function Home() {
                       version="1.1"
                       id="Layer_1"
                       viewBox="0 0 512 512"
-                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-white mr-1.5"
+                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-amber-50 mr-1.5"
                     >
                       <g strokeWidth="0"></g>
                       <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -202,7 +202,7 @@ export default function Home() {
                         </g>
                       </g>
                     </svg>
-                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-white font-medium">
+                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-amber-50 font-medium">
                       In progress
                     </span>
                   </div>
