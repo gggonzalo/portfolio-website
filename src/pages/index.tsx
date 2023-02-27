@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,12 +9,9 @@ export default function Home() {
         id="intro"
         className="flex flex-col md:flex-row items-center justify-between mb-20"
       >
-        {/* TODO: See if this can be changed to Image. Also, see why this is taking so long to load on mobile */}
-        <img
-          src="/images/me.png"
-          alt=""
-          className="h-48 w-48 md:order-2 mb-10 md:mb-0"
-        />
+        <div className="shrink-0 h-48 w-48 relative md:order-2 mb-10 md:mb-0">
+          <Image src="/images/me.png" alt="" fill />
+        </div>
         <div>
           <h1 className="text-4xl font-bold mb-4">Hey, I&apos;m Gonzalo. 👋</h1>
           <p className="text-lg mr-0 md:mr-20 mb-2">
@@ -72,11 +70,14 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-600 shadow-lg dark:shadow-none flex flex-col rounded-lg overflow-clip">
             {/* TODO: Add alt pictures  */}
-            <img
-              src="/images/custo-me.jpg"
-              alt=""
-              className="w-full h-56 object-cover"
-            />
+            <div className="h-56 w-full relative">
+              <Image
+                src="/images/custo-me.jpg"
+                alt=""
+                fill
+                className="object-cover"
+              />
+            </div>
             <div className="flex flex-col p-3">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-medium">CustoMe</h3>
