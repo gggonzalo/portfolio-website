@@ -112,7 +112,7 @@ const Navbar = () => {
             HOME
           </Link>
           <Link
-            href="https://docs.google.com/document/d/1Pej_WLKjUujAzbf0HdyEc_NgWYLlCNPv_2lEm-hb_yA/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1Pej_WLKjUujAzbf0HdyEc_NgWYLlCNPv_2lEm-hb_yA"
             target="_blank"
             rel="noopener"
             onClick={() => setIsOpen(false)}
