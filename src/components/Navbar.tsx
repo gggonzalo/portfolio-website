@@ -111,7 +111,12 @@ const Navbar = () => {
           <Link href="/" onClick={() => setIsOpen(false)}>
             HOME
           </Link>
-          <Link href="/" onClick={() => setIsOpen(false)}>
+          <Link
+            href="https://docs.google.com/document/d/1Pej_WLKjUujAzbf0HdyEc_NgWYLlCNPv_2lEm-hb_yA/edit?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            onClick={() => setIsOpen(false)}
+          >
             RESUME
           </Link>
           {/* <Link href="/about">About</Link> */}

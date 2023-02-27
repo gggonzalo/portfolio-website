@@ -72,6 +72,7 @@ export default function Home() {
           Some of the side projects I&apos;ve worked on:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* TODO: Make these cards a component */}
           <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-600 shadow-lg dark:shadow-none flex flex-col rounded-lg overflow-clip">
             {/* TODO: Add alt pictures  */}
             <div className="h-56 w-full relative">
