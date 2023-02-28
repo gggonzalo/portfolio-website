@@ -92,7 +92,7 @@ export default function Home() {
                       version="1.1"
                       id="Layer_1"
                       viewBox="0 0 512 512"
-                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-amber-50 mr-1.5"
+                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-white mr-1.5"
                     >
                       <g strokeWidth="0"></g>
                       <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -104,7 +104,7 @@ export default function Home() {
                         </g>
                       </g>
                     </svg>
-                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-amber-50 font-medium">
+                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-white font-medium">
                       In progress
                     </span>
                   </div>
@@ -190,7 +190,7 @@ export default function Home() {
                       version="1.1"
                       id="Layer_1"
                       viewBox="0 0 512 512"
-                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-amber-50 mr-1.5"
+                      className="h-1.5 w-1.5 transition-[fill] duration-500 fill-amber-700 dark:fill-white mr-1.5"
                     >
                       <g strokeWidth="0"></g>
                       <g strokeLinecap="round" strokeLinejoin="round"></g>
@@ -202,7 +202,7 @@ export default function Home() {
                         </g>
                       </g>
                     </svg>
-                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-amber-50 font-medium">
+                    <span className="text-xs transition-[color] duration-500 text-amber-700 dark:text-white font-medium">
                       In progress
                     </span>
                   </div>
@@ -243,9 +243,9 @@ export default function Home() {
                 </Link> */}
               </div>
               <div className="flex gap-1.5 text-white text-sm">
-                <div className="transition-[background-color] duration-500 bg-orange-100 bg-opacity-30 border border-orange-500 dark:bg-orange-600 dark:bg-opacity-100 rounded-lg p-1">
-                  <span className="transition-[color] duration-500 text-orange-500 dark:text-white">
-                    Svelte
+                <div className="transition-[background-color] duration-500 bg-red-100 bg-opacity-30 border border-red-500 dark:bg-red-600 dark:bg-opacity-100 rounded-lg p-1">
+                  <span className="transition-[color] duration-500 text-red-500 dark:text-white">
+                    Angular
                   </span>
                 </div>
                 <div className="transition-[background-color] duration-500 bg-sky-100 bg-opacity-30 border border-sky-500 dark:bg-sky-500 dark:bg-opacity-100 rounded-lg p-1">
@@ -255,7 +255,12 @@ export default function Home() {
                 </div>
                 <div className="transition-[background-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-500 dark:bg-purple-600 dark:bg-opacity-100 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-purple-500 dark:text-white">
-                    ASP.NET Core Web API
+                    ASP.NET Core 6 Web API
+                  </span>
+                </div>
+                <div className="transition-[background-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-500 dark:bg-purple-600 dark:bg-opacity-100 rounded-lg p-1">
+                  <span className="transition-[color] duration-500 text-purple-500 dark:text-white">
+                    EF Core 6
                   </span>
                 </div>
               </div>
