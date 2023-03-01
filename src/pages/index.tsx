@@ -255,12 +255,12 @@ export default function Home() {
                 </div>
                 <div className="transition-[background-color,border-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-600 dark:bg-purple-700 dark:bg-opacity-100 dark:border-purple-700 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-purple-600 dark:text-white">
-                    ASP.NET Core 6 Web API
+                    ASP.NET Core Web API
                   </span>
                 </div>
                 <div className="transition-[background-color,border-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-600 dark:bg-purple-700 dark:bg-opacity-100 dark:border-purple-700 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-purple-600 dark:text-white">
-                    EF Core 6
+                    EF Core
                   </span>
                 </div>
               </div>
