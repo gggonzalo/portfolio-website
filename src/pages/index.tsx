@@ -158,12 +158,12 @@ export default function Home() {
                 </Link> */}
               </div>
               <div className="flex gap-1.5 text-white text-sm">
-                <div className="transition-[background-color] duration-500 bg-red-100 bg-opacity-30 border border-red-500 dark:bg-red-600 dark:bg-opacity-100 rounded-lg p-1">
+                <div className="transition-[background-color,border-color] duration-500 bg-red-100 bg-opacity-30 border border-red-500 dark:bg-red-600 dark:bg-opacity-100 dark:border-red-600 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-red-500 dark:text-white">
                     Angular
                   </span>
                 </div>
-                <div className="transition-[background-color] duration-500 bg-sky-100 bg-opacity-30 border border-sky-500 dark:bg-sky-500 dark:bg-opacity-100 rounded-lg p-1">
+                <div className="transition-[background-color,border-color] duration-500 bg-sky-100 bg-opacity-30 border border-sky-500 dark:bg-sky-500 dark:bg-opacity-100 dark:border-sky-500 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-sky-500 dark:text-white">
                     Tailwind CSS
                   </span>
@@ -242,24 +242,24 @@ export default function Home() {
                   Read more
                 </Link> */}
               </div>
-              <div className="flex gap-1.5 text-white text-sm">
-                <div className="transition-[background-color] duration-500 bg-red-100 bg-opacity-30 border border-red-500 dark:bg-red-600 dark:bg-opacity-100 rounded-lg p-1">
+              <div className="flex flex-wrap gap-1.5 text-white text-sm">
+                <div className="transition-[background-color,border-color] duration-500 bg-red-100 bg-opacity-30 border border-red-500 dark:bg-red-600 dark:bg-opacity-100 dark:border-red-600 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-red-500 dark:text-white">
                     Angular
                   </span>
                 </div>
-                <div className="transition-[background-color] duration-500 bg-sky-100 bg-opacity-30 border border-sky-500 dark:bg-sky-500 dark:bg-opacity-100 rounded-lg p-1">
+                <div className="transition-[background-color,border-color] duration-500 bg-sky-100 bg-opacity-30 border border-sky-500 dark:bg-sky-500 dark:bg-opacity-100 dark:border-sky-500 rounded-lg p-1">
                   <span className="transition-[color] duration-500 text-sky-500 dark:text-white">
                     Tailwind CSS
                   </span>
                 </div>
-                <div className="transition-[background-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-500 dark:bg-purple-600 dark:bg-opacity-100 rounded-lg p-1">
-                  <span className="transition-[color] duration-500 text-purple-500 dark:text-white">
+                <div className="transition-[background-color,border-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-600 dark:bg-purple-700 dark:bg-opacity-100 dark:border-purple-700 rounded-lg p-1">
+                  <span className="transition-[color] duration-500 text-purple-600 dark:text-white">
                     ASP.NET Core 6 Web API
                   </span>
                 </div>
-                <div className="transition-[background-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-500 dark:bg-purple-600 dark:bg-opacity-100 rounded-lg p-1">
-                  <span className="transition-[color] duration-500 text-purple-500 dark:text-white">
+                <div className="transition-[background-color,border-color] duration-500 bg-purple-100 bg-opacity-30 border border-purple-600 dark:bg-purple-700 dark:bg-opacity-100 dark:border-purple-700 rounded-lg p-1">
+                  <span className="transition-[color] duration-500 text-purple-600 dark:text-white">
                     EF Core 6
                   </span>
                 </div>
