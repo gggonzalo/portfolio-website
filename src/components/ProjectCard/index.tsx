@@ -30,7 +30,7 @@ export const ProjectCard = ({
           <Image src={imageSrc} alt="" fill className="object-cover" />
         </div>
       )}
-      <div className="flex flex-col p-3">
+      <div className="grow flex flex-col p-3">
         <div className="flex items-start justify-between mb-3">
           <div className="flex flex-col items-start">
             <h3 className="text-lg font-medium">{projectName}</h3>
@@ -83,7 +83,9 @@ export const ProjectCard = ({
         Read more
       </Link> */}
         </div>
-        <div className="flex flex-wrap gap-1.5 text-sm">{technologyBadges}</div>
+        <div className="flex flex-wrap gap-1.5 text-sm mt-auto">
+          {technologyBadges}
+        </div>
       </div>
     </div>
   );
