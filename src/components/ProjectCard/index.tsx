@@ -73,7 +73,7 @@ export const ProjectCard = ({
             )}
           </div>
         </div>
-        <div className="flex flex-col mb-4">
+        <div className="flex flex-col mb-7">
           <p>{projectDescription}</p>
           {/* TODO: Add to projects that have a separate page */}
           {/* <Link
