@@ -80,7 +80,7 @@ export default function Home() {
         <p className="text-lg mb-6">
           Some of the side projects I&apos;ve worked on:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard
             projectName="CustoMe"
             projectDescription="Sometimes the Halloween party is close but you don't have a costume. CustoMe helps you find characters based on the attributes that work for you, so you get an idea of what you can dress up as."
