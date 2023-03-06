@@ -31,7 +31,7 @@ const Navbar = () => {
         <button
           aria-label="Activate light mode"
           title="Activate light mode"
-          className="transition-[background-color] duration-500 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-full p-2"
+          className="transition-[background-color] duration-500 hover:bg-slate-300 dark:hover:bg-slate-600 rounded-full p-2"
           onClick={() => setTheme("light")}
         >
           <svg
@@ -52,7 +52,7 @@ const Navbar = () => {
         <button
           aria-label="Activate dark mode"
           title="Activate dark mode"
-          className="transition-[background-color] duration-500 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-full p-2"
+          className="transition-[background-color] duration-500 hover:bg-slate-300 dark:hover:bg-slate-600 rounded-full p-2"
           onClick={() => setTheme("dark")}
         >
           <svg
@@ -79,7 +79,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[background-color,border-color] duration-500 bg-white dark:bg-black border-b-2 border-slate-200 md:border-b-0 dark:border-slate-600 p-4">
+    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[border-color] duration-500 border-b-2 border-slate-200 md:border-b-0 dark:border-slate-600 p-4">
       {/* TODO: Check hrefs  */}
       <div className="flex items-center justify-between md:mb-0">
         <Link href="/" className="md:text-lg font-semibold tracking-wide">
@@ -130,14 +130,14 @@ const Navbar = () => {
           {/* <button
             aria-label="Set language to Spanish"
             title="Set language to Spanish"
-            className="transition-[background-color] duration-500 hover:bg-slate-200 dark:hover:bg-slate-600 text-sm rounded-full p-2"
+            className="transition-[background-color] duration-500 hover:bg-slate-300 dark:hover:bg-slate-600 text-sm rounded-full p-2"
           >
             ESP
           </button>
           <button
             aria-label="Set language to English"
             title="Set language to English"
-            className="transition-[background-color] duration-500 hover:bg-slate-200 dark:hover:bg-slate-600 text-sm rounded-full p-2"
+            className="transition-[background-color] duration-500 hover:bg-slate-300 dark:hover:bg-slate-600 text-sm rounded-full p-2"
           >
             ENG
           </button> */}
