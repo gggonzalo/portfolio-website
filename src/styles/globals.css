@@ -4,10 +4,6 @@
 
 /* Some light/dark mode configurations */
 @layer base {
-  body {
-    @apply transition-[background-color] duration-500 bg-slate-100 dark:bg-slate-900;
-  }
-
   svg {
     @apply transition-[fill] duration-500 fill-slate-600 dark:fill-slate-200;
   }
