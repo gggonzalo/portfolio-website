@@ -23,7 +23,7 @@ export const ProjectCard = ({
   technologyBadges,
 }: ProjectCardProps) => {
   return (
-    <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-300 dark:border-slate-800 shadow-md dark:shadow-none flex flex-col rounded-lg overflow-clip">
+    <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-800 shadow-md dark:shadow-none flex flex-col rounded-lg overflow-clip">
       {/* TODO: Add alt pictures  */}
       {imageSrc && (
         <div className="h-56 w-full relative">
