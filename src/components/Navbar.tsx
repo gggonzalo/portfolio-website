@@ -79,7 +79,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[border-color] duration-500 border-b-2 border-slate-200 md:border-b-0 dark:border-slate-600 p-4">
+    <nav className="flex flex-col md:flex-row md:items-center justify-between transition-[border-color] duration-500 border-b-2 border-slate-200 md:border-b-0 dark:border-slate-800 p-4">
       {/* TODO: Check hrefs  */}
       <div className="flex items-center justify-between md:mb-0">
         <Link href="/" className="md:text-lg font-semibold tracking-wide">
