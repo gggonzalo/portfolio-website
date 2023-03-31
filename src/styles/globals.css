@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* TODO: Fix FOUC when user reloads page on dark mode */
 /* Some light/dark mode configurations */
 @layer base {
   svg {
