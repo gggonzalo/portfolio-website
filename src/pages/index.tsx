@@ -30,8 +30,7 @@ export default function Home() {
           <p className="text-lg mr-0 md:mr-20 mb-2">
             I&apos;m a{" "}
             <em className="font-medium not-italic">Full Stack Developer</em>{" "}
-            from Costa Rica.
-            <span className="whitespace-nowrap">👨‍💻🇨🇷</span>
+            from Costa Rica. 👨‍💻
             <br />I like building simple, usable, delightful user experiences
             and tools, as well as writing code that&apos;s easy to understand
             and maintainable. <span className="whitespace-nowrap">🛠️✨</span>
