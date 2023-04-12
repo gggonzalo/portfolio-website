@@ -44,7 +44,7 @@ export const InProgressBadge = () => {
   return (
     <StatusBadge
       statusText="In progress"
-      backgroundColorStyles="bg-amber-300 dark:bg-amber-500"
+      backgroundColorStyles="bg-amber-300 dark:bg-amber-600"
       iconColorStyles="fill-amber-700 dark:fill-white"
       textColorStyles="text-amber-700 dark:text-white"
     />
