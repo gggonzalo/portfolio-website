@@ -120,9 +120,6 @@ const Navbar = () => {
             RESUME
           </Link>
           {/* <Link href="/about">About</Link> */}
-          <Link href="/#projects" onClick={() => setIsOpen(false)}>
-            PROJECTS
-          </Link>
         </div>
         {/* TODO: Internationalization and show just 2 of the 4 buttons  */}
         <div className="flex items-center justify-center md:justify-start gap-1">
