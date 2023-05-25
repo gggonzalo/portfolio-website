@@ -76,3 +76,14 @@ export const EfCoreBadge = () => {
     />
   );
 };
+
+export const SignalRBadge = () => {
+  return (
+    <TechnologyBadge
+      technologyName="SignalR"
+      backgroundColorStyles="bg-purple-100 bg-opacity-30 dark:bg-purple-700 dark:bg-opacity-100"
+      borderColorStyles="border-purple-600  dark:border-purple-700"
+      textColorStyles="text-purple-600 dark:text-white"
+    />
+  );
+};

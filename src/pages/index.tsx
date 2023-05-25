@@ -6,6 +6,7 @@ import {
   AspDotNetCoreWebApiBadge,
   EfCoreBadge,
   NextJsBadge,
+  SignalRBadge,
   TailwindBadge as TailwindCssBadge,
 } from "@/components/ProjectCard/TechnologyBadges";
 import { InProgressBadge } from "@/components/ProjectCard/StatusBadge";
@@ -94,14 +95,16 @@ export default function Home() {
           />
           <ProjectCard
             projectName="Nueva Mejenga"
-            projectDescription="Organizing a pick-up soccer game with your friends can be complicated. From defining the date and time to ensuring that everyone paid you their fee. NuevaMejenga helps you with these tasks so you only have to worry about having fun when it's game day."
+            projectDescription="Organizing a pick-up soccer game with your friends can be complicated. From finding the players to changing the date and time. Nueva Mejenga helps you with these tasks so you only have to worry about having fun when it's game day."
             imageSrc="/images/nueva-mejenga.jpg"
+            liveDemoLink="https://nuevamejenga.gggonzalo.com"
             statusBadge={<InProgressBadge />}
             technologyBadges={[
               <AngularBadge key="Angular" />,
               <TailwindCssBadge key="TailwindCSS" />,
               <AspDotNetCoreWebApiBadge key="AspDotNetCoreWebApi" />,
               <EfCoreBadge key="EfCore" />,
+              <SignalRBadge key="SinalR" />,
             ]}
           />
           <ProjectCard
