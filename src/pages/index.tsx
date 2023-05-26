@@ -82,18 +82,6 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard
-            projectName="CustoMe"
-            projectDescription="Sometimes the Halloween party is close but you don't have a costume. CustoMe helps you find characters based on the attributes that work for you, so you get an idea of what you can dress up as."
-            imageSrc="/images/custo-me.jpg"
-            statusBadge={<InProgressBadge />}
-            liveDemoLink="https://custo-me.gggonzalo.com"
-            gitHubLink="https://github.com/gggonzalo/custo-me"
-            technologyBadges={[
-              <AngularBadge key="Angular" />,
-              <TailwindCssBadge key="TailwindCSS" />,
-            ]}
-          />
-          <ProjectCard
             projectName="Nueva Mejenga"
             projectDescription="Organizing a pick-up soccer game with your friends can be complicated. From finding the players to changing the date and time. Nueva Mejenga helps you with these tasks so you only have to worry about having fun when it's game day."
             imageSrc="/images/nueva-mejenga.jpg"
@@ -105,6 +93,18 @@ export default function Home() {
               <AspDotNetCoreWebApiBadge key="AspDotNetCoreWebApi" />,
               <EfCoreBadge key="EfCore" />,
               <SignalRBadge key="SinalR" />,
+            ]}
+          />
+          <ProjectCard
+            projectName="CustoMe"
+            projectDescription="Sometimes the Halloween party is close but you don't have a costume. CustoMe helps you find characters based on the attributes that work for you, so you get an idea of what you can dress up as."
+            imageSrc="/images/custo-me.jpg"
+            statusBadge={<InProgressBadge />}
+            liveDemoLink="https://custo-me.gggonzalo.com"
+            gitHubLink="https://github.com/gggonzalo/custo-me"
+            technologyBadges={[
+              <AngularBadge key="Angular" />,
+              <TailwindCssBadge key="TailwindCSS" />,
             ]}
           />
           <ProjectCard
