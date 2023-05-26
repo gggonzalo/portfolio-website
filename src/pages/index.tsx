@@ -31,10 +31,10 @@ export default function Home() {
           <p className="text-lg mr-0 md:mr-20 mb-2">
             I&apos;m a{" "}
             <em className="font-medium not-italic">Full Stack Developer</em>{" "}
-            from Costa Rica. 👨‍💻
+            from&nbsp;<span className="whitespace-pre">Costa Rica. 👨‍💻</span>
             <br />I like building simple, usable, delightful user experiences
             and tools, as well as writing code that&apos;s easy to understand
-            and maintainable. <span className="whitespace-nowrap">🛠️✨</span>
+            and&nbsp;<span className="whitespace-pre">maintainable. 🛠️✨</span>
           </p>
           <div className="flex items-center gap-3">
             <Link
