@@ -5,7 +5,7 @@
 /* TODO: Fix FOUC when user reloads page on dark mode */
 /* Some light/dark mode configurations */
 @layer base {
-  svg {
+  svg:not([fill="none"]) {
     @apply transition-[fill] duration-500 fill-slate-600 dark:fill-slate-200;
   }
 

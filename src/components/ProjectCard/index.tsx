@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import React, { ReactNode } from "react";
+import { cn } from "@/utils";
 
 interface ProjectCardProps {
   projectName: string;
-  // We can keep this prop as a string as long as we just want to show a plain paragraph a description
+  // We can keep this prop as a string as long as we just want to show a plain paragraph as description
   projectDescription: string;
-  imageSrc?: string;
+  icon?: ReactNode;
+  iconBackground?: string;
   statusBadge: JSX.Element;
   liveDemoLink?: string;
   gitHubLink?: string;
@@ -16,7 +18,8 @@ interface ProjectCardProps {
 export const ProjectCard = ({
   projectName,
   projectDescription,
-  imageSrc,
+  icon,
+  iconBackground,
   statusBadge,
   liveDemoLink,
   gitHubLink,
@@ -25,9 +28,14 @@ export const ProjectCard = ({
   return (
     <div className="transition-[border-color,box-shadow] duration-500 border-2 border-slate-200 dark:border-slate-800 shadow-md dark:shadow-none flex flex-col rounded-lg overflow-clip">
       {/* TODO: Add alt pictures  */}
-      {imageSrc && (
-        <div className="h-56 w-full relative">
-          <Image src={imageSrc} alt="" fill className="object-cover" />
+      {icon && (
+        <div
+          className={cn(
+            "h-56 w-full relative flex items-center justify-center",
+            iconBackground ?? "bg-slate-300 dark:bg-slate-400"
+          )}
+        >
+          {icon}
         </div>
       )}
       <div className="grow flex flex-col p-3">

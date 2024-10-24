@@ -22,12 +22,23 @@ const TechnologyBadge = ({
   );
 };
 
+export const ReactBadge = () => {
+  return (
+    <TechnologyBadge
+      technologyName="React"
+      backgroundColorStyles="bg-sky-100 bg-opacity-30 dark:bg-sky-600 dark:bg-opacity-100"
+      borderColorStyles="border-sky-500 dark:border-sky-600"
+      textColorStyles="text-sky-500 dark:text-white"
+    />
+  );
+};
+
 export const AngularBadge = () => {
   return (
     <TechnologyBadge
       technologyName="Angular"
       backgroundColorStyles="bg-red-100 bg-opacity-30 dark:bg-red-600 dark:bg-opacity-100"
-      borderColorStyles="border-red-500  dark:border-red-600"
+      borderColorStyles="border-red-500 dark:border-red-600"
       textColorStyles="text-red-500 dark:text-white"
     />
   );
@@ -38,7 +49,7 @@ export const NextJsBadge = () => {
     <TechnologyBadge
       technologyName="Next.js"
       backgroundColorStyles="bg-zinc-100 bg-opacity-30 dark:bg-zinc-600 dark:bg-opacity-100"
-      borderColorStyles="border-zinc-600  dark:border-zinc-600"
+      borderColorStyles="border-zinc-600 dark:border-zinc-600"
       textColorStyles="text-zinc-600 dark:text-white"
     />
   );
@@ -48,9 +59,9 @@ export const TailwindBadge = () => {
   return (
     <TechnologyBadge
       technologyName="TailwindCSS"
-      backgroundColorStyles="bg-sky-100 bg-opacity-30 dark:bg-sky-500 dark:bg-opacity-100"
-      borderColorStyles="border-sky-500  dark:border-sky-500"
-      textColorStyles="text-sky-500 dark:text-white"
+      backgroundColorStyles="bg-blue-100 bg-opacity-30 dark:bg-blue-500 dark:bg-opacity-100"
+      borderColorStyles="border-blue-500 dark:border-blue-500"
+      textColorStyles="text-blue-500 dark:text-white"
     />
   );
 };
@@ -60,7 +71,7 @@ export const AspDotNetCoreWebApiBadge = () => {
     <TechnologyBadge
       technologyName="ASP.NET Core Web API"
       backgroundColorStyles="bg-purple-100 bg-opacity-30 dark:bg-purple-700 dark:bg-opacity-100"
-      borderColorStyles="border-purple-600  dark:border-purple-700"
+      borderColorStyles="border-purple-600 dark:border-purple-700"
       textColorStyles="text-purple-600 dark:text-white"
     />
   );
@@ -71,7 +82,7 @@ export const EfCoreBadge = () => {
     <TechnologyBadge
       technologyName="EF Core"
       backgroundColorStyles="bg-purple-100 bg-opacity-30 dark:bg-purple-700 dark:bg-opacity-100"
-      borderColorStyles="border-purple-600  dark:border-purple-700"
+      borderColorStyles="border-purple-600 dark:border-purple-700"
       textColorStyles="text-purple-600 dark:text-white"
     />
   );
@@ -82,7 +93,7 @@ export const SignalRBadge = () => {
     <TechnologyBadge
       technologyName="SignalR"
       backgroundColorStyles="bg-purple-100 bg-opacity-30 dark:bg-purple-700 dark:bg-opacity-100"
-      borderColorStyles="border-purple-600  dark:border-purple-700"
+      borderColorStyles="border-purple-600 dark:border-purple-700"
       textColorStyles="text-purple-600 dark:text-white"
     />
   );

@@ -6,10 +6,12 @@ import {
   AspDotNetCoreWebApiBadge,
   EfCoreBadge,
   NextJsBadge,
+  ReactBadge,
   SignalRBadge,
   TailwindBadge as TailwindCssBadge,
 } from "@/components/ProjectCard/TechnologyBadges";
 import { InProgressBadge } from "@/components/ProjectCard/StatusBadge";
+import { CandlestickChart, Ghost, Handshake, Trophy } from "lucide-react";
 
 export default function Home() {
   return (
@@ -80,11 +82,27 @@ export default function Home() {
         <p className="text-lg mb-6">
           Some of the side projects I&apos;ve worked on:
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+          <ProjectCard
+            projectName="Crypto Alerts"
+            projectDescription="A web application that allows you to see cryptocurrencies charts and set price and indicators alerts. When alerts are triggered, you will receive a push notification."
+            icon={<CandlestickChart size={128} />}
+            iconBackground="bg-orange-300 dark:bg-orange-400"
+            statusBadge={<InProgressBadge />}
+            gitHubLink="https://github.com/gggonzalo/trading-project"
+            technologyBadges={[
+              <ReactBadge key="React" />,
+              <TailwindCssBadge key="TailwindCSS" />,
+              <AspDotNetCoreWebApiBadge key="AspDotNetCoreWebApi" />,
+              <EfCoreBadge key="EfCore" />,
+              <SignalRBadge key="SinalR" />,
+            ]}
+          />
           <ProjectCard
             projectName="Nueva Mejenga"
             projectDescription="Organizing a pick-up soccer game with your friends can be complicated. From finding the players to changing the date and time. Nueva Mejenga helps you with these tasks so you only have to worry about having fun when it's game day."
-            imageSrc="/images/nueva-mejenga.jpg"
+            icon={<Trophy size={128} />}
+            iconBackground="bg-blue-300 dark:bg-blue-400"
             // TODO: Readd when the database for this demo is fixed
             // liveDemoLink="https://nuevamejenga.gggonzalo.com"
             statusBadge={<InProgressBadge />}
@@ -99,7 +117,8 @@ export default function Home() {
           <ProjectCard
             projectName="CustoMe"
             projectDescription="Sometimes the Halloween party is close but you don't have a costume. CustoMe helps you find characters based on the attributes that work for you, so you get an idea of what you can dress up as."
-            imageSrc="/images/custo-me.jpg"
+            icon={<Ghost size={128} />}
+            iconBackground="bg-purple-300 dark:bg-purple-400"
             statusBadge={<InProgressBadge />}
             liveDemoLink="https://custo-me.gggonzalo.com"
             gitHubLink="https://github.com/gggonzalo/custo-me"
