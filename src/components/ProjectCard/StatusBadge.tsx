@@ -40,6 +40,17 @@ const StatusBadge = ({
   );
 };
 
+export const CompletedBadge = () => {
+  return (
+    <StatusBadge
+      statusText="Completed"
+      backgroundColorStyles="bg-green-300 dark:bg-green-600"
+      iconColorStyles="fill-green-700 dark:fill-white"
+      textColorStyles="text-green-700 dark:text-white"
+    />
+  );
+};
+
 export const InProgressBadge = () => {
   return (
     <StatusBadge

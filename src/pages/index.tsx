@@ -10,8 +10,11 @@ import {
   SignalRBadge,
   TailwindBadge as TailwindCssBadge,
 } from "@/components/ProjectCard/TechnologyBadges";
-import { InProgressBadge } from "@/components/ProjectCard/StatusBadge";
-import { CandlestickChart, Ghost, Handshake, Trophy } from "lucide-react";
+import {
+  CompletedBadge,
+  InProgressBadge,
+} from "@/components/ProjectCard/StatusBadge";
+import { CandlestickChart, Ghost, Trophy, Landmark } from "lucide-react";
 
 export default function Home() {
   return (
@@ -83,6 +86,19 @@ export default function Home() {
           Some of the side projects I&apos;ve worked on:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+          <ProjectCard
+            projectName="Tasas CDPs CR"
+            projectDescription="A website that shows updated and historical cerificates of deposit interest rates for different entities in Costa Rica in a single place."
+            icon={<Landmark size={128} />}
+            iconBackground="bg-green-300 dark:bg-green-400"
+            statusBadge={<CompletedBadge />}
+            liveDemoLink="https://cdpscostarica.gggonzalo.com"
+            gitHubLink="https://github.com/gggonzalo/tasas-cdp-cr"
+            technologyBadges={[
+              <NextJsBadge key="NextJs" />,
+              <TailwindCssBadge key="TailwindCSS" />,
+            ]}
+          />
           <ProjectCard
             projectName="Crypto Alerts"
             projectDescription="A web application that allows you to see cryptocurrencies charts and set price and indicators alerts. When alerts are triggered, you will receive a push notification."
