@@ -101,7 +101,7 @@ export default function Home() {
           />
           <ProjectCard
             projectName="Crypto Alerts"
-            projectDescription="A web application that allows you to see cryptocurrencies charts and set price and indicators alerts. When alerts are triggered, you will receive a push notification."
+            projectDescription="A web application that displays cryptocurrency charts and allows users to set price and indicator alerts. When alerts are triggered, users will receive push notifications."
             icon={<CandlestickChart size={128} />}
             iconBackground="bg-orange-300 dark:bg-orange-400"
             statusBadge={<InProgressBadge />}
@@ -115,24 +115,8 @@ export default function Home() {
             ]}
           />
           <ProjectCard
-            projectName="Nueva Mejenga"
-            projectDescription="Organizing a pick-up soccer game with your friends can be complicated. From finding the players to changing the date and time. Nueva Mejenga helps you with these tasks so you only have to worry about having fun when it's game day."
-            icon={<Trophy size={128} />}
-            iconBackground="bg-blue-300 dark:bg-blue-400"
-            // TODO: Readd when the database for this demo is fixed
-            // liveDemoLink="https://nuevamejenga.gggonzalo.com"
-            statusBadge={<InProgressBadge />}
-            technologyBadges={[
-              <AngularBadge key="Angular" />,
-              <TailwindCssBadge key="TailwindCSS" />,
-              <AspDotNetCoreWebApiBadge key="AspDotNetCoreWebApi" />,
-              <EfCoreBadge key="EfCore" />,
-              <SignalRBadge key="SinalR" />,
-            ]}
-          />
-          <ProjectCard
             projectName="CustoMe"
-            projectDescription="Sometimes the Halloween party is close but you don't have a costume. CustoMe helps you find characters based on the attributes that work for you, so you get an idea of what you can dress up as."
+            projectDescription="Sometimes the Halloween party is approaching, but you lack a costume. CustoMe helps you discover characters based on your attributes, giving you ideas for your outfit."
             icon={<Ghost size={128} />}
             iconBackground="bg-purple-300 dark:bg-purple-400"
             statusBadge={<InProgressBadge />}
@@ -140,16 +124,6 @@ export default function Home() {
             gitHubLink="https://github.com/gggonzalo/custo-me"
             technologyBadges={[
               <AngularBadge key="Angular" />,
-              <TailwindCssBadge key="TailwindCSS" />,
-            ]}
-          />
-          <ProjectCard
-            projectName="Portfolio website"
-            projectDescription="The website you are on right now."
-            statusBadge={<InProgressBadge />}
-            gitHubLink="https://github.com/gggonzalo/portfolio-website"
-            technologyBadges={[
-              <NextJsBadge key="NextJs" />,
               <TailwindCssBadge key="TailwindCSS" />,
             ]}
           />
