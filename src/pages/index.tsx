@@ -88,7 +88,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           <ProjectCard
             projectName="Tasas CDPs CR"
-            projectDescription="A website that shows updated and historical cerificates of deposit interest rates for different entities in Costa Rica in a single place."
+            projectDescription="A website that displays both current and historical certificates of deposit interest rates from various institutions in Costa Rica, all in one place."
             icon={<Landmark size={128} />}
             iconBackground="bg-green-300 dark:bg-green-400"
             statusBadge={<CompletedBadge />}
