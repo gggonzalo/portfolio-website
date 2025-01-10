@@ -6,7 +6,9 @@ import { ThemeProvider } from "next-themes";
 import { DarkModeToggle } from "../components/DarkModeToggle";
 
 // If loading a variable font, you don't need to specify the font weight
-const inter = Inter();
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Gonzalo Gonzalez",
