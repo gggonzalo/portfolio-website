@@ -43,7 +43,7 @@ export default function Home() {
           <div className="h-full w-1 bg-primary">&nbsp;</div>
           Personal projects
         </h3>
-        <article className="grid grid-cols-1 gap-4 text-balance md:grid-cols-2">
+        <article className="grid grid-cols-1 gap-5 text-balance md:grid-cols-2">
           <section className="flex flex-col items-start">
             <h4 className="mb-2 font-semibold">🏦 Tasas CDPs Costa Rica</h4>
             <p className="mb-1.5 text-sm text-muted-foreground">
