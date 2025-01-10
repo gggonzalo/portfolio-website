@@ -53,14 +53,14 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <Link
-                className="text-xs"
+                className="text-sm"
                 href="https://cdpscostarica.gggonzalo.com/"
                 target="_blank"
               >
                 Website
               </Link>
               <Link
-                className="text-xs"
+                className="text-sm"
                 href="https://github.com/gggonzalo/tasas-cdp-cr"
                 target="_blank"
               >
@@ -77,7 +77,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4">
               <Link
-                className="text-xs"
+                className="text-sm"
                 href="https://github.com/gggonzalo/trading-project"
                 target="_blank"
               >
