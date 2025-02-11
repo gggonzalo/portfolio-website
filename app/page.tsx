@@ -78,7 +78,14 @@ export default function Home() {
             <div className="flex gap-4">
               <Link
                 className="text-sm"
-                href="https://github.com/gggonzalo/trading-project"
+                href="https://crypto-tools.gggonzalo.com/"
+                target="_blank"
+              >
+                Website
+              </Link>
+              <Link
+                className="text-sm"
+                href="https://github.com/gggonzalo/crypto-tools"
                 target="_blank"
               >
                 Source code
